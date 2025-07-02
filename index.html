@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunix Terapia</title>
+  <link rel="stylesheet" href="cliente.css">
+  <link rel="icon" type="image" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      flex: 0 1 300px;
+    }
+
+    .card i {
+      margin-bottom: 10px;
+      color: #3f3f3f;
+    }
+
+    .faq.active .answer {
+      display: block;
+    }
+
+    .faq .answer {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="um">
+        <img class="imagem-redonda" src="logo.jpg" alt="Logo">LUNIX</h1>
+      <nav>
+        <a href="#inicial">Início</a>
+        <a href="#terapeuta">Terapeuta</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+<main>
+  <section class="hero" id="inicial" data-aos="fade-up">
+    <h2>A luz da sua nova jornada</h2>
+    <p>Transforme sua vida com apoio terapêutico e autoconhecimento</p>
+    <a href="#contato" class="btn">Fale com a Terapeuta</a>
+  </section>
+
+<section class="imagem-texto" id="terapeuta" data-aos="fade-up">
+  <img src="cliente.jpeg" alt="Descrição da imagem" class="imagem-lado">
+  <div class="texto-lado">
+    <h2>Sobre a Terapeuta</h2>
+    <p>Elzi é natural de Salvador (BA) e teve uma infância marcada por fortes vínculos com a natureza e a vida no campo, que compartilhou mais tarde com sua filha, Maria Clara. Mudou-se para São Paulo em 1984, onde enfrentou dificuldades escolares e financeiras, trabalhando desde jovem.</p>
+
+<p>Em 2023, viveu um dos maiores desafios de sua vida ao ser hospitalizada e intubada por complicações de saúde, o que resultou na amputação de parte dos dedos. Apesar do impacto emocional para a família, Elzi demonstrou grande autocontrole e aceitação ao acordar do coma.</p>
+
+<p>Atualmente, em transição de carreira e próxima da aposentadoria, Elzi investe em sua formação com pós-graduações em constelação familiar e terapias integrativas, com o objetivo de ajudar outras pessoas. Sua trajetória é um exemplo de superação, resiliência e dedicação ao cuidado com o próximo.</p>
+  </div>
+</section>
+
+  <section id="servicos" class="container-servicos" data-aos="fade-up">
+    <h2>Serviços Oferecidos</h2>
+    <div class="cards">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-user fa-2x"></i>
+        <h3>Atendimento Individual</h3>
+        <p>Sessões voltadas para o autoconhecimento, autoestima e ansiedade.</p>
+        <p class="descricao">Presencial ou online</p>
+        <a href="https://wa.me/+5513981473541" target="_blank" class="btn">Agende no WhatsApp</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-heart fa-2x"></i>
+        <h3>Terapia de Casal</h3>
+        <p>Melhore a comunicação e a conexão no seu relacionamento.</p>
+        <p class="descricao">Com técnicas de mediação e empatia</p>
+        <a href="https://wa.me/+5513981473541" target="_blank" class="btn">Fale Conosco</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-users fa-2x"></i>
+        <h3>Grupo Terapêutico</h3>
+        <p>Encontros em grupo para partilhas e fortalecimento emocional.</p>
+        <p class="descricao">Turmas abertas mensalmente</p>
+        <a href="https://wa.me/+5513981473541" target="_blank" class="btn">Quero Participar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="duvidas" data-aos="fade-up">
+    <h1>Perguntas Frequentes</h1>
+    <div class="faq">
+      <div class="question">Como funciona a terapia?</div>
+      <div class="answer">Processo de autoconhecimento e desenvolvimento emocional guiado por um profissional.</div>
+    </div>
+    <div class="faq">
+      <div class="question">Preciso ter um problema grave para fazer terapia?</div>
+      <div class="answer">Não. A terapia é para qualquer pessoa que deseja se conhecer melhor.</div>
+    </div>
+    <div class="faq">
+      <div class="question">As sessões são sigilosas?</div>
+      <div class="answer">Sim. Garantia de privacidade com sigilo profissional.</div>
+    </div>
+    <div class="faq">
+      <div class="question">Com que frequência devo fazer terapia?</div>
+      <div class="answer">A mais comum é semanal, mas depende da necessidade do paciente.</div>
+    </div>
+  </section>
+
+  <section class="depoimentos" id="avaliacoes" data-aos="fade-up">
+    <h2>O que dizem sobre a Elzi</h2>
+    <blockquote data-aos="fade-up">"A Elzi é uma profissional incrível. Me ajudou a enxergar coisas que eu nunca havia percebido sobre mim mesma."<br /><strong>Ana C.</strong></blockquote>
+    <blockquote data-aos="fade-up" data-aos-delay="100">"Sempre me sinto acolhido nas sessões com a Elzi. Ela é atenta, sensível e extremamente competente."<br /><strong>João M.</strong></blockquote>
+    <blockquote data-aos="fade-up" data-aos-delay="200">""A forma como a Elzi conduz a terapia é leve, mas profunda. Sinto que evoluí muito desde que começamos."<br /><strong>Larissa T.</strong></blockquote>
+    <blockquote data-aos="fade-up" data-aos-delay="300">"Recomendo a Elzi de olhos fechados. Ela me ajudou num momento muito difícil com empatia e profissionalismo."<br /><strong>Pedro R.</strong></blockquote>
+  </section>
+
+  <section class="questionario-section" data-aos="fade-up">
+    <div class="contato-formulario">
+      <h3 id="contato">Contato</h3>
+      <form action="https://formspree.io/f/xwpbygqz" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="social-icons">
+      <a href="https://www.instagram.com/luni.xterapia/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/+5513981473541" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <footer>
+    <p>© 2025 Lunix Terapia. Todos os direitos reservados.</p>
+    <p>Email: elzisantosdejesus294@gmail.com | (13) 98147-3541</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      const faqs = document.querySelectorAll(".faq");
+      faqs.forEach(faq => {
+        faq.querySelector(".question").addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+
+      const btnTopo = document.getElementById("btnTopo");
+      if (btnTopo) {
+        window.addEventListener("scroll", () => {
+          btnTopo.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+        btnTopo.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    });
+
+window.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = form.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+          } else {
+            alert("Erro ao enviar. Tente novamente.");
+          }
+        })
+        .catch(error => {
+          alert("Erro ao enviar. Tente novamente.");
+        });
+    });
+  });
+
+  </script>
+  <button id="btnTopo" title="Voltar ao topo" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Libras</title>
+  <style>
+    /* Estilo do botão Libras */
+    #vlibras-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: #0077cc;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    #vlibras-button:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    #vlibras-button img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+</head>
+  <!-- Botão Libras -->
+ 
+
+  <!-- Script do VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+    // Abre o VLibras ao clicar no botão
+    function openVLibras() {
+      const accessBtn = document.querySelector('[vw-access-button]');
+      if (accessBtn) {
+        accessBtn.click();
+      }
+    }
+  </script>
+
+</main>
+</body>
+</html>
