@@ -45,21 +45,68 @@
         align-items: center;
       }
     }
+
+    /* Estilo do botão do menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  nav#mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  nav#mobile-menu a {
+    padding: 10px;
+    text-align: left;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
   </style>
 </head>
 <body>
   <header>
     <div class="container">
       <h1 class="um">
+        <button id="menu-toggle" class="menu-toggle">
+  <i class="fas fa-bars"></i>
+</button>
+
         <img class="imagem-redonda" src="logo.jpg" alt="Logo">LUNIX</h1>
-      <nav>
-        <a href="#inicial">Início</a>
-        <a href="#terapeuta">Terapeuta</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#duvidas">Dúvidas</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Contato</a>
-      </nav>
+      <nav id="mobile-menu">
+  <a href="#inicial">Início</a>
+  <a href="#terapeuta">Terapeuta</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#duvidas">Dúvidas</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#contato">Contato</a>
+</nav>
+
     </div>
   </header>
 <main>
@@ -207,6 +254,24 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     });
   });
+
+
+    // Menu hamburguer
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("mobile-menu");
+
+toggle.addEventListener("click", () => {
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+});
+
+// Fecha menu ao clicar em um link
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      nav.style.display = "none";
+    }
+  });
+});
 
   </script>
   <button id="btnTopo" title="Voltar ao topo" style="display: none;">
